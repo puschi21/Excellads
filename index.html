@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <title>Excellads - Agenție de Social Media Marketing</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #8a8a8a;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .headline, .subheadline, .breaking-news span {
+            color: white;
+        }
+
+        .headline {
+            font-size: 90px;
+            font-weight: bold;
+            font-family: 'Bebas Neue', sans-serif;
+            margin: 20px 0;
+            line-height: 1.2;
+            text-transform: uppercase;
+            word-break: break-word;
+        }
+
+        .subheadline {
+            font-size: 26px;
+            margin-top: 10px;
+			font-family: "Work Sans", sans-serif;
+			font-weight: 400;
+        }
+
+        /* Exclusive Offer Banner */
+        .exclusive-offer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;	
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .exclusive-offer img {
+            margin-left: 10px;
+            width: 40px;
+            height: auto;
+        }
+
+        .breaking-news {
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            padding: 12px 25px;
+            border-radius: 300px;
+            width: fit-content;
+            margin: 0 auto;
+            font-family: sans-serif;
+        }
+
+        .breaking-news span {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .red-dot {
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: flare 1s infinite;
+        }
+
+        @keyframes flare {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.6; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+	<script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+</head>
+<body>
+        <div class="container">
+        <!-- Breaking News section -->
+        <div class="breaking-news">
+            <div class="red-dot"></div>
+            <span style="text-transform:uppercase">ȘTIRI DE ULTIMA ORĂ:<span id="current-date">15 SEPTEMBRIE, 2024</span></span>
+        </div>       
+
+        <!-- Headline Section -->
+        <div class="headline">
+            CUM GENEREAZĂ AGENȚIA NOASTRĂ MILIOANE DE EURO PENTRU CLIENȚII SĂI PRIN METODA "...".
+        </div>
+
+        <!-- Subheadline Section -->
+        <div class="subheadline">
+			Clienții Noștri Au Leșinat Când Au Citit Cifrele Uluitoare<br>
+			Profit De Până La 3600% 😱
+        </div>
+
+        <!-- Video Section -->
+        <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="960"
+    height="540"
+    poster="poze/gif.gif"
+    data-setup="{}"
+	>
+    <source src="video/prezentare.mp4" type="video/mp4" />
+    <source src="video/prezentare.webm" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a>
+    </p>
+	</video>
+    </div>
+	    <!-- Story Section -->
+    <div style="background-color: #dbdbdb; padding: 50px 20px; color: white;">
+        <div class="container">
+            <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 48px; text-transform: uppercase; margin-bottom: 20px;">
+                Povestea Agenției Noastre
+            </h2>
+            <p style="font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.6;">
+                Aici puteți scrie povestea agenției dumneavoastră, cum a început, valorile pe care le respectați și modul în care v-ați dezvoltat în timp. Aceasta este ocazia perfectă pentru a împărtăși realizările voastre și pentru a atrage încrederea clienților.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
